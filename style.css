@@ -1,0 +1,127 @@
+/* CSS RESET */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Sedan', sans-serif;
+    background-color: #f8f2e7; /* Warna latar belakang yang lembut */
+    color: #333; /* Warna teks */
+}
+
+h2, h3 {
+    color: #241a19; /* Warna coklat tua untuk heading */
+}
+
+footer {
+    background-color: #241a19; /* Warna coklat tua untuk footer */
+    padding: 20px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.gambar-artikel {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gambar-dokum {
+    width: 200px;
+}
+
+main {
+    padding: 20px;
+}
+
+.card {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.21);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: #ffffff; /* Warna latar belakang putih untuk card */
+}
+
+.jumbotron {
+    background-color: #e3c6b5; /* Warna latar belakang yang lembut untuk jumbotron */
+    text-align: center;
+    padding: 60px;
+    color: #241a19; /* Warna teks coklat tua */
+    font-size: 20px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 30px;
+    list-style-type: none;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+nav {
+    background-color: #241a19; /* Warna coklat tua untuk nav */
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+header {
+    display: inline;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+#content {
+    flex-grow: 5;
+}
+
+aside {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.21);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    flex-grow: 1;
+    background-color: #ffffff; /* Warna latar belakang putih untuk aside */
+}
+
+aside header {
+    text-align: center;
+}
+
+aside table {
+    border-collapse: collapse;
+}
+
+aside table th,
+aside table td {
+    border: 1px solid black;
+    padding: 8px; /* Padding untuk sel tabel */
+}
+
+nav a:hover {
+    font-weight: bold;
+    font-size: 100%;
+    color: #e3c6b5; /* Warna hover untuk link */
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    main {
+        flex-wrap: wrap;
+    }
+    #content, aside {
+        width: 100%;
+    }
+}
